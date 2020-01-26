@@ -99,6 +99,15 @@
                                         <state key="normal" title=" ВЫЧИСЛИТЬ">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHH-3Y-o9k"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,8 +126,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="heightLabel" destination="cFj-8o-YHv" id="kL2-E7-fo7"/>
-                        <outlet property="weightLabel" destination="qjn-V5-ZAQ" id="8ih-NE-LK5"/>
+                        <outlet property="heightLabel" destination="cFj-8o-YHv" id="r6S-F5-nYL"/>
+                        <outlet property="hightSlider" destination="Yso-s8-j65" id="7eN-LR-nOs"/>
+                        <outlet property="weightLabel" destination="qjn-V5-ZAQ" id="37t-jy-RE6"/>
+                        <outlet property="weightSlider" destination="g7l-iO-zdF" id="OSC-2l-o8h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -146,6 +157,12 @@
                                 <state key="normal" title="ПЕРЕСЧИТАТЬ ">
                                     <color key="titleColor" red="0.3835890293" green="0.36162391300000002" blue="0.63117641209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wcl-qJ-NRo">
                                 <rect key="frame" x="68.5" y="358.5" width="277.5" height="179"/>
