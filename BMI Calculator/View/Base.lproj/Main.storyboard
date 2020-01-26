@@ -47,13 +47,16 @@
                                             <constraint firstAttribute="height" constant="21" id="qRi-hB-zXa"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yso-s8-j65">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="Yso-s8-j65">
                                         <rect key="frame" x="-2" y="596" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="n4m-bV-YP1"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.45490196078431372" green="0.44705882352941173" blue="0.82352941176470584" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="thumbTintColor" red="0.45490196078431372" green="0.44705882352941173" blue="0.82352941176470584" alpha="0.50744104677914115" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="heightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="jRL-nr-TUf"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="1wx-UX-Hoc">
                                         <rect key="frame" x="0.0" y="666" width="374" height="21"/>
@@ -75,13 +78,16 @@
                                             <constraint firstAttribute="height" constant="21" id="77A-12-tYn"/>
                                         </constraints>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g7l-iO-zdF">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="g7l-iO-zdF">
                                         <rect key="frame" x="-2" y="697" width="378" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="DhY-aD-OnU"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.45490196078431372" green="0.44705882352941173" blue="0.82352941176470584" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="thumbTintColor" red="0.45490196078431372" green="0.44705882352941173" blue="0.82352941176470584" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="weightSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nk3-sI-yE8"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oss-8Y-ELY">
                                         <rect key="frame" x="0.0" y="767" width="374" height="51"/>
@@ -110,10 +116,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="cFj-8o-YHv" id="kL2-E7-fo7"/>
+                        <outlet property="weightLabel" destination="qjn-V5-ZAQ" id="8ih-NE-LK5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="111.16071428571428"/>
+            <point key="canvasLocation" x="-435" y="84"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nZw-Lf-KIx">
@@ -178,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtt-Eh-sr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844.92753623188412" y="113.83928571428571"/>
+            <point key="canvasLocation" x="248" y="84"/>
         </scene>
     </scenes>
     <resources>
