@@ -23,8 +23,8 @@ class CalculateViewController: UIViewController {
         
     }
     
-    
     @IBAction func heightSliderChanged(_ sender: UISlider) {
+        // "%.2f" - Sets the required number of decimal places
         heightLabel.text = String(format: "%.2f", sender.value)
         heightLabel.text! += "м"
     }
@@ -40,10 +40,11 @@ class CalculateViewController: UIViewController {
         let bmi = weight / pow(height, 2)
         bmiValue = String(format: "%.1f", bmi)
         
-        
+        // Initiates the segue with the specified identifier from the current view controller's storyboard file.
         performSegue(withIdentifier: "goToResult", sender: self)
     }
     
+    // Switch to another screen if the identifier matches
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
