@@ -13,7 +13,7 @@
 		9820287423DDE9D900A07F4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9820287223DDE9D900A07F4C /* Main.storyboard */; };
 		9820287623DDE9E000A07F4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9820287523DDE9E000A07F4C /* Assets.xcassets */; };
 		9820287923DDE9E000A07F4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9820287723DDE9E000A07F4C /* LaunchScreen.storyboard */; };
-		984A297923E01CB800B57685 /* SeconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A297823E01CB800B57685 /* SeconViewController.swift */; };
+		984A297B23E0300D00B57685 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A297A23E0300D00B57685 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		9820287523DDE9E000A07F4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9820287823DDE9E000A07F4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9820287A23DDE9E000A07F4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		984A297823E01CB800B57685 /* SeconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeconViewController.swift; sourceTree = "<group>"; };
+		984A297A23E0300D00B57685 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9820287023DDE9D900A07F4C /* ViewController.swift */,
-				984A297823E01CB800B57685 /* SeconViewController.swift */,
+				984A297A23E0300D00B57685 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				9820287123DDE9D900A07F4C /* ViewController.swift in Sources */,
 				9820286D23DDE9D900A07F4C /* AppDelegate.swift in Sources */,
 				9820286F23DDE9D900A07F4C /* SceneDelegate.swift in Sources */,
-				984A297923E01CB800B57685 /* SeconViewController.swift in Sources */,
+				984A297B23E0300D00B57685 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
